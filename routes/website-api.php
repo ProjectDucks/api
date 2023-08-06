@@ -1,6 +1,6 @@
 <?php
 
-//use App\API\v1;
+//use App\Web\Admin\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('v1')->group(function () {
-    //Route::apiResource('project', v1\Project\ProjectController::class);
-    //Route::apiResource('module', v1\Project\ModuleController::class);
-    //Route::apiResource('product', v1\Project\ProductController::class);
-    //Route::apiResource('version', v1\Project\VersionController::class);
+Route::prefix('admin')->group(function () {
+    //Route::apiResource('user', Controllers\UserController::class);
+    //
+});
+
+Route::prefix('user')->group(function () {
+    //
 });
